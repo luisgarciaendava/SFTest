@@ -1,0 +1,23 @@
+<aura:component controller="ArtifactController" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="artifactsList" type="Object" />
+    
+    <aura:handler name="init" value="this" action="{!c.loadArtifacts}"/>  
+    
+    <div class="slds-page-header">  
+        <span class="slds-align_absolute-center">  
+            <lightning:icon iconName="custom:custom32" title="Artifacts" />  
+            <span class="slds-page-header__title" title="Questionnarie">  
+                Artifacts Versions 
+            </span>  
+        </span>  
+    </div>  
+    
+    <div class="slds-box slds-theme_default">  
+        ID:{!v.recordId}<br/>
+        <aura:iteration items="{!v.artifactsList}" var="item" indexVar="index">
+            {!item.name} - {!item.with} - {!item.height} - {!item.versionsCount} <br/>
+        </aura:iteration>
+    </div>  
+    
+</aura:component>

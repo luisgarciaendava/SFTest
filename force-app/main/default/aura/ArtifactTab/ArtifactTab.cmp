@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,lightning:isUrlAddressable" >
+	<aura:attribute name="recordId" type="String"/>  
+    <aura:handler name="init" value="this" action="{!c.doInit}"/>
+    
+    <c:Artifact recordId="{!v.recordId}" />
+</aura:component>

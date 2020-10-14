@@ -104,6 +104,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>Artifact</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Artifact_Factory__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

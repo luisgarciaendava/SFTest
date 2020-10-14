@@ -1,0 +1,4 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId" >
+	<aura:attribute name="recordId" type="String" />
+    <c:Artifact recordId="{!v.recordId}" />
+</aura:component>
